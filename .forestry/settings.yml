@@ -4,10 +4,23 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: content/english/course
+  label: courses
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/english/about
+  label: about
+  create: all
+  match: "**/*"
+- type: document
+  path: config.toml
+  label: config
+  match: "**/*"
 - type: document
   path: data/en/homepage.yml
   label: homepage
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
