@@ -5,6 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/english/notice
+  label: notice
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/english/event
+  label: events
+  create: all
+  match: "**/*"
+- type: directory
   path: content/english/course
   label: courses
   create: all
