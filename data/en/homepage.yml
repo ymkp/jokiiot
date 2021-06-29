@@ -1,11 +1,11 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/misc/wavesbg.jpg"
+  bg_image : "images/misc/seatsbeach.jpg"
   slider_item:
     # slider item loop
-    - title : "LEARN TO SURF TODAY"
-      # content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+    - title : "Refresh for a while, for a better tomorrow"
+      # content : "You deserve it"
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
@@ -17,8 +17,8 @@ slider:
 
 ############################### Banner feature ###############################
 banner_feature:
-  enable : false
-  image : "images/banner/banner-feature.png"
+  enable : true
+  image : "images/misc/marvinmeyer.jpg"
   feature_item:
     # feature item loop
     - name : "Scholorship News"
@@ -44,9 +44,9 @@ banner_feature:
 ############################## about ##################################
 about:
   enable : true
-  title : "About Dream Of Blue"
+  title : "About Dream Of Bali"
   image : "images/about/a.jpg"
-  content : "As local surfers, we teach how to surf and deliver the best possible experience for beachgoers in Bali. This is a continuation of our lifestyle. But we are not a big company where people only care about profits. For us, hanging out with our students at the beach, sharing our surf values ​​and lifestyles, such as friendship and environmental concerns, are an integral part of our surf classes."
+  content : "We’ve all been there — facing down a week, maybe months of hardships and scraping the bottom of the pool for points."
   button:
     enable : false
     label : "Learn more"
@@ -67,7 +67,7 @@ cta:
   button:
     enable : true
     label : "Visit Our Instagram"
-    link : "http://www.instagram.com/dreamof.blue"
+    link : "http://www.instagram.com/dreamof.bali"
 
 
 ######################## Success story #############################

@@ -1,5 +1,5 @@
 ---
-title: "Private Lesson"
+title: "4 Days 2 Nights"
 date: 2021-06-06T15:27:17+06:00
 draft: false
 # page title background image
@@ -9,15 +9,15 @@ description : "Private lessons are made up of one-on-one teacher-to-student inst
 # course thumbnail
 image: "images/courses/private-surf-lesson.jpg"
 # taxonomy
-category: "Surf"
+# category: "Surf"
 # teacher
 # teacher: "Clark Malik"
 # duration
-duration : "hours"
+duration : "4 Days"
 # weekly
 # weekly : "03 hours"
 # course fee
-fee : "idr 300K/h per person"
+fee : "idr 1700K/px (min 4px)"
 # apply url
 apply_url : "https://wa.me/6285293555041"
 # type
@@ -32,8 +32,8 @@ Private lessons are made up of one-on-one teacher-to-student instruction. They w
 
 
 
-* all equipment: surfboard, leash and UV protection surf t-shirt.
-* 15 minutes beach training going over surfing technique & ocean safety.
-* 1 hour of surfing time with a professional and friendly coach.
-* 1 extra hour of catching waves on your own (FOR FREE!).
-* a water bottle for refreshment after the lesson
+* Hotel.
+* Transportation.
+* Breakfast, Lunch, and Dinner.
+* Tourist spots admissions.
+* Mineral Water.
