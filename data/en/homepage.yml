@@ -1,0 +1,118 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  bg_image : "images/misc/wavesbg.jpg"
+  slider_item:
+    # slider item loop
+    - title : "LEARN TO SURF TODAY"
+      # content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Book now"
+        link : "https://wa.me/6285293555041"
+
+
+############################### Banner feature ###############################
+banner_feature:
+  enable : false
+  image : "images/banner/banner-feature.png"
+  feature_item:
+    # feature item loop
+    - name : "Scholorship News"
+      icon : "ti-book" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Our Notice Board"
+      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Our Achievements"
+      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Admission Now"
+      icon : "ti-write" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "About Dream Of Blue"
+  image : "images/about/a.jpg"
+  content : "As local surfers, we teach how to surf and deliver the best possible experience for beachgoers in Bali. This is a continuation of our lifestyle. But we are not a big company where people only care about profits. For us, hanging out with our students at the beach, sharing our surf values ​​and lifestyles, such as friendship and environmental concerns, are an integral part of our surf classes."
+  button:
+    enable : false
+    label : "Learn more"
+    link : "about"
+
+
+############################# Course ################################
+course:
+  enable : true
+  title : "Our Courses"
+  # course item comes from "content/**/course" folder.
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle : "See more about our activities"
+  # title : "See more about our activities"
+  button:
+    enable : true
+    label : "Visit Our Instagram"
+    link : "http://www.instagram.com/dreamof.blue"
+
+
+######################## Success story #############################
+success_story:
+  enable : true
+  bg_image : "images/misc/bgstory.jpg"
+  title : "Additionals"
+  content : "In addition to our surf coaching options, you can personalize your lessons with our services and extras. The most popular ones include pick up, surfboard rental, photography services and guided tours around Bali. You can add a request through our booking system or get in touch with us via WhatsApp. We aim to ensure your experience is as enjoyable as possible!"
+  # video link
+  video_link : "https://www.youtube.com/watch?v=ResipmZmpDU"
+
+
+############################# event ################################
+event:
+  enable : false
+  title : "Upcoming Events"
+  # event item comes from "content/**/event" folder.
+
+  
+########################### funfacts ############################
+funfacts:
+  enable : true
+  funfact_item:
+    # funfact item loop
+    - name : "TEACHERS"
+      count : "60"
+
+    # funfact item loop
+    - name : "COURSES"
+      count : "50"
+
+    # funfact item loop
+    - name : "STUDENTS"
+      count : "1000"
+
+    # funfact item loop
+    - name : "SATISFIED CLIENT"
+      count : "1400"
+
+# funfact is for about page
+
+
+
+############################# blog ################################
+blog:
+  enable : false
+  title : "Latest News"
+  # blog item comes from "content/**/blog" folder.

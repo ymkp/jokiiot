@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+<!-- courses -->
+<section class="section">
+  <div class="container">
+    <!-- course list -->
+    <div class="row justify-content-between">
+      <!-- course item -->
+      {{ range .Data.Pages }}
+      <div class="col-sm-6">
+
+        <!-- section -->
+        <section class="section-sm">
+          <div class="container">
+            <div class="row">
+              <div class="container">
+                <!-- course thumb -->
+                <img style="height: 500px;width: 100%;object-fit: cover;" src="{{ .Params.image | relURL }}"
+                  class="img-fluid w-100">
+              </div>
+            </div>
+            <br>
+            <!-- course info -->
+            <div class="row align-content">
+              <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+                <h3>{{ .Title }}</h3>
+              </div>
+              <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+                <ul class="list-inline ">
+                  <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+                    <div class="d-flex align-items-center">
+                      <i class="ti-timer text-primary icon-md mr-2"></i>
+                      <div class="text-left">
+                        <h6 class="mb-0">{{ i18n "duration" | upper }}</h6>
+                        <p class="mb-0">{{ .Params.Duration }}</p>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+                    <div class="d-flex align-items-center">
+                      <i class="ti-wallet text-primary icon-md mr-2"></i>
+                      <div class="text-left">
+                        <h6 class="mb-0">{{ i18n "fee" | upper }}</h6>
+                        <p class="mb-0">{{ .Params.Fee }}</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- border -->
+              <div class="col-12 mt-4 order-4">
+                <div class="border-bottom border-primary"></div>
+              </div>
+            </div>
+            <!-- course details -->
+            <div class="row">
+              <div class="col-12 mb-4 content">
+                {{ .Content }}
+              </div>
+            </div>
+            <!-- apply now-->
+            <div class="col-xl-3 text-sm-right text-left order-sm-2 order-3 order-xl-3 col-sm-6 mb-4 mb-xl-0">
+              <a href="{{ .Params.Apply_url | safeURL }}" class="btn btn-primary">{{ i18n "apply_now" }}</a>
+            </div>
+          </div>
+        </section>
+        <!-- /section -->
+        
+     </div>
+      {{ end }}
+    </div>
+    <!-- /course list -->
+  </div>
+</section>
+<!-- /courses -->
+
+{{ end }}
