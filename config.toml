@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "http://examplesite.org"
-title = "Dream Of Bali Tour & Travel"
+title = "JOKI IOT tapi masih pake dreamofbalitour.com wkwk"
 theme = "educenter-hugo"
 themesDir = "./themes"
 # post pagination
