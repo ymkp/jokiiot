@@ -1,290 +1,196 @@
-######################## default configuration ####################
+################################# Basic configuration #########################
+# Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "http://examplesite.org"
-title = "JOKI IOT tapi masih pake dreamofbalitour.com wkwk"
-theme = "educenter-hugo"
-themesDir = "./themes"
-# post pagination
-paginate = "6"
-# post excerpt
-summaryLength = "10"
-# disqus short name
-disqusShortname = "educenter" # get your shortname form here : https://disqus.com
-# disable language
-disableLanguages = ["Fr"] # desable language from here
+title = "Airspace | Creative Agency Hugo Template"
+theme = "airspace-hugo"
+# Number of posts per page in list view
+paginate = "4"
+# Post excerpt length
+summaryLength = "30"
+# Disabled languages
+disableLanguages = []
+# Short name to enable Disqus comments
+disqusShortname = "" # Get your shortname from here: https://disqus.com/profile/signup/
+# Measurement ID (G-XXXXXXX) to enable Google Analytics
+googleAnalytics = ""
 
 
-############################# Plugins ##############################
+############################# Modules ##############################
+[module.hugoVersion]
+extended = true
+min = "0.83.1"
 
+
+################################# Output formats ##############################
+# Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
+
+[outputs]
+home = [ "HTML" ]
+
+
+################################# Markup ######################################
+# Documentation: https://gohugo.io/getting-started/configuration-markup
+
+[markup.goldmark.renderer]
+# Allow "unsafe" HTML in Markdown
+unsafe = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 6
+ordered = false
+
+
+################################# Default parameters ##########################
+[params]
+logo = "images/logo.png"
+logo_width = "150px"
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Themefisher"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+
+################################# Sidebar widgets #############################
+[params.widgets]
+sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+
+
+################################# Contact page ################################
+[params.contact]
+# Address block
+phone = "0124857985320"
+email = "iotjoki@gmail.com"
+location = """
+**Themefisher**  
+North Main Street  
+Brooklyn, New South Wales  
+Australia
+"""
+# Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
+address_descriptors = false
+[params.contact.form]
+enable = true
+# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
+use_netlify = true
+# Form action
+## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
+action = "#"
+# Image on custom success page `/message_sent.html`
+success_image = "images/paper-plane.svg"
+
+
+################################# Google map ##################################
+[params.gmap]
+enable = true
+gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "-6.2376538"
+map_longitude = "106.7990427"
+map_marker = "images/marker.png"
+
+
+################################# Preloader ###################################
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif image
+
+
+################################# Cookies #####################################
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+################################# counter.dev analytics #######################
+# This is a [privacy-friendly alternative](https://counter.dev/privacy.html) to Google Analytics & Co.
+[params.counter]
+enable = true
+# counter.dev username, see https://counter.dev/setup.html
+username = ""
+
+
+################################# Social Media ################################
+[[params.social]]
+icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+
+################################# Plugins #####################################
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/css/bootstrap.min.css"
+attributes = "media='screen'"
+
+[[params.plugins.css]]
+link = "plugins/ionicons/css/ionicons.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.min.css"
+attributes = ""
+
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
-[[params.plugins.css]]
-link = "plugins/animate/animate.css"
-[[params.plugins.css]]
-link = "plugins/venobox/venobox.css"
-[[params.plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
+attributes = ""
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "plugins/jquery/jquery.min.js"
+attributes = ""
+
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/js/bootstrap.min.js"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
+attributes = ""
+
 [[params.plugins.js]]
-link = "plugins/venobox/venobox.min.js"
+link = "plugins/magnific-popup/magnific-popup.min.js"
+attributes = ""
+
 [[params.plugins.js]]
-link = "plugins/filterizr/jquery.filterizr.min.js"
+link = "plugins/shuffle/shuffle.min.js"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
+attributes = "defer"
 
 
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-# Meta data
-description = "This is meta description"
-author = "wak satrik"
-# contact info
-address = "Bali Indonesia"
-mobile = "+6285293555041"
-email = "dreamofbluebalisurfschool@gmail.com"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
-# Google Analitycs
-google_analitycs_id = "" # your id
-# top header
-top_header = true
-
-# Preloader
-[params.preloader]
-enable = true
-preloader = "images/palm.gif" # use jpg, png, svg or gif format.
-
-# Subscription
-[params.subscription]
-enable = false
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
-
-# google map
-[params.map]
-enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png" # marker size 37*55 px
-
-# cookies
-[params.cookies]
-enable = false
-expire_days = 2
-  
-############################# social site ########################
-# [[params.social]]
-# title = "facebook"
-# icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-# link = "#"
-
-# [[params.social]]
-# title = "twitter"
-# icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-# link = "#"
-
-[[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "http://www.instagram.com/dreamof.bali"
-
-# [[params.social]]
-# title = "github"
-# icon = "ti-github" # themify icon : https://themify.me/themify-icons
-# link = "#"
-
-# [[params.social]]
-# title = "linkedin"
-# icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-# link = "#"
-
-
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
+################################# English translation #########################
+[languages.en]
+languageName = "English"
+languageCode = "en-US"
 contentDir = "content/english"
 weight = 1
-home = "Home"
-# copyright
-copyright = "&copy; 2020 by [ymkp](https://ymkp.github.io) with a hugo theme by [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved."
 
-
-
-################### English navigation ####################
-
-# main menu
-# [[Languages.en.menu.main]]
-# name = "About"
-# url = "about"
-# weight = 1
-
-[[Languages.en.menu.main]]
-name = "course"
-url = "course"
-weight = 2
-
-# [[Languages.en.menu.main]]
-# weight = 3
-# name = "Pages"
-# hasChildren = true
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "teacher"
-#   url = "teacher"
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "notice"
-#   url = "notice"
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "event"
-#   url = "event"
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "scholarship"
-#   url = "scholarship"
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "research"
-#   url = "research"
-  
-# [[Languages.en.menu.main]]
-# name = "blog"
-# url = "blog"
-# weight = 4
-  
-[[Languages.en.menu.main]]
-name = "Contact"
-url = "https://wa.me/6285293555041"
-weight = 5
-
-
-# footer menu
-
-# [[Languages.en.menu.footer]]
-# name = "teacher"
-# url = "teacher"
-
-# [[Languages.en.menu.footer]]
-# name = "notice"
-# url = "notice"
-
-# [[Languages.en.menu.footer]]
-# name = "event"
-# url = "event"
-
-# [[Languages.en.menu.footer]]
-# name = "scholarship"
-# url = "scholarship"
-
-# [[Languages.en.menu.footer]]
-# name = "research"
-# url = "research"
-
-
-
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
-
-
-
-################### French navigation ####################
-
-# main menu
-[[Languages.fr.menu.main]]
-name = "À propos"
-url = "about"
-weight = 1
-
-[[Languages.fr.menu.main]]
-name = "Cours"
-url = "course"
-weight = 2
-
-[[Languages.fr.menu.main]]
-weight = 3
-name = "Pages"
+# Navigation menus
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
+[[languages.en.menu.main]]
 hasChildren = true
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "teacher"
-  url = "teacher"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "notice"
-  url = "notice"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "Évènement"
-  url = "event"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "Cursus"
-  url = "scholarship"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "research"
-  url = "research"
-  
-[[Languages.fr.menu.main]]
-name = "blog"
-url = "blog"
-weight = 4
-  
-[[Languages.fr.menu.main]]
-name = "Contact"
-url = "contact"
+name = "More"
 weight = 5
-
-
-# footer menu
-
-[[Languages.fr.menu.footer]]
-name = "teacher"
-url = "teacher"
-
-[[Languages.fr.menu.footer]]
-name = "notice"
-url = "notice"
-
-[[Languages.fr.menu.footer]]
-name = "event"
-url = "event"
-
-[[Languages.fr.menu.footer]]
-name = "scholarship"
-url = "scholarship"
-
-[[Languages.fr.menu.footer]]
-name = "research"
-url = "research"
