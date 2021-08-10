@@ -5,31 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/english/notice
-  label: notice
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/english/event
-  label: events
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/english/course
-  label: courses
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/english/about
-  label: about
+  path: content/english/project
+  label: project
   create: all
   match: "**/*"
 - type: document
   path: config.toml
   label: config
-- type: document
-  path: data/en/homepage.yml
-  label: homepage
 upload_dir: static/images
 public_path: "/uploads"
 front_matter_path: ''
