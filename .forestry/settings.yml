@@ -5,31 +5,44 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/english/notice
-  label: notice
+  path: content/english/author
+  label: author
   create: all
   match: "**/*"
 - type: directory
-  path: content/english/event
-  label: events
+  path: content/english/blog
+  label: blog
   create: all
   match: "**/*"
 - type: directory
-  path: content/english/course
-  label: courses
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/english/about
-  label: about
+  path: content/english/project
+  label: project
   create: all
   match: "**/*"
 - type: document
   path: config.toml
   label: config
 - type: document
-  path: data/en/homepage.yml
-  label: homepage
+  path: content/english/_index.md
+  label: "index atau homepage"
+- type: document
+  path: content/english/about.md
+  label: about
+- type: document
+  path: content/english/contact.md
+  label: contact
+- type: document
+  path: content/english/faq.md
+  label: FAQ
+- type: document
+  path: content/english/message_sent.md
+  label: "message sent?"
+- type: document
+  path: content/english/pricing.md
+  label: pricings
+- type: document
+  path: content/english/service.md
+  label: service
 upload_dir: static/images
 public_path: "/uploads"
 front_matter_path: ''
@@ -38,10 +51,10 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.81.0
+  - HUGO_VERSION=0.87.0
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --renderToDisk -d public
-version: 0.81.0
+version: 0.87.0
