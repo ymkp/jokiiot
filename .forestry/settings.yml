@@ -24,7 +24,7 @@ sections:
   label: config
 - type: document
   path: content/english/_index.md
-  label: "index atau homepage"
+  label: index atau homepage
 - type: document
   path: content/english/about.md
   label: about
@@ -36,7 +36,7 @@ sections:
   label: FAQ
 - type: document
   path: content/english/message_sent.md
-  label: "message sent?"
+  label: message sent?
 - type: document
   path: content/english/pricing.md
   label: pricings
@@ -50,7 +50,6 @@ use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:
-  - HUGO_ENV=staging
   - HUGO_VERSION=0.87.0
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
